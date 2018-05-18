@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'validate'
+    }
+
+  }
   stages {
     stage('Validate') {
       steps {
