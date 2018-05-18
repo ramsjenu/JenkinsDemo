@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'mvn compilet'
+        sh 'mvn compile'
       }
     }
     stage('Pack') {
